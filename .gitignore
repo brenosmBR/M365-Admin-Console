@@ -1,0 +1,35 @@
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# PowerShell
+*.ps1xml
+
+# Arquivos temporários
+*.tmp
+*.bak
+
+# Configurações locais
+Config/config.json
+
+# Arquivos de ambiente
+.env
+.env.*
+
+# Credenciais
+*.pfx
+*.pem
+*.key
+*.cer
+
+# Histórico PowerShell
+ConsoleHost_history.txt
