@@ -12,21 +12,3 @@ function Show-Banner {
     Write-Host "============================================================" -ForegroundColor Cyan
     Write-Host ""
 }
-
-function Show-Menu {
-
-}
-
-function Read-MenuOption {
-
-}
-
-function Pause-Console {
-
-}
-
-function Clear-Console {
-
-}
-
-Export-ModuleMember -Function *
