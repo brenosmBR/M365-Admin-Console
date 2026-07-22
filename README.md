@@ -45,7 +45,7 @@ Em breve será disponibilizado um script de instalação automática.
 
 ## Autor
 
-Breno Silva Menezes
+Breno Silva Menezes e Otavio Gomes Correia
 
 ## Licença
 
