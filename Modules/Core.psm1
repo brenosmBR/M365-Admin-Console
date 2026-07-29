@@ -1,8 +1,8 @@
 function Read-MenuOption {
-
+    return Read-Host "Escolha uma opção"
 }
 
-function Pause-Console {
+function Wait-Console {
     Read-Host "Pressione ENTER para continuar..."
 }
 
@@ -31,7 +31,7 @@ function Write-WarningMessage {
         [string]$Message
     )
 
-    write-Host $Message -ForegroundColor Yellow
+    Write-Host $Message -ForegroundColor Yellow
 }
 
 function Write-ErrorMessage {
