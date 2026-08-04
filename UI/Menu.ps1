@@ -6,6 +6,7 @@ function Show-Menu {
             Name = "Microsoft Graph"
         }
 
+    )
         [PSCustomObject]@{
             Id   = 2
             Name = "Exchange Online"
@@ -25,7 +26,15 @@ function Show-Menu {
             Id   = 5
             Name = "Microsoft Entra ID"
         }
-    )
+
+        [PSCustomObject]@{
+            Id   = 6
+            Name = "Onboarding"
+        }
+        [PSCustomObject]@{
+            Id   = 7
+            Name = "Offboarding"
+        }
 
     foreach ($Item in $MenuItems) {
 
