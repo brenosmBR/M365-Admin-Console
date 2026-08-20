@@ -10,7 +10,8 @@ function Start-Console {
 
         switch ($Option) {
             1 {
-                Write-Info "Microsoft Graph em desenvolvimento."
+                Connect-M365Graph
+                Write-Success "Conectado ao Microsoft Graph."
             }
 
             2 {
