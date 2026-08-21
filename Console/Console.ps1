@@ -11,7 +11,8 @@ function Start-Console {
         switch ($Option) {
             1 {
                 Connect-M365Graph
-                Write-Success "Conectado ao Microsoft Graph."
+                Clear-Console
+                Get-M365GraphContext
             }
 
             2 {

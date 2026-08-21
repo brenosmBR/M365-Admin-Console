@@ -7,7 +7,7 @@ function Show-Banner {
     Write-Host ""
     Write-Host (" {0,-14}: {1}" -f "Versão", "0.1.0")
     Write-Host (" {0,-14}: {1}" -f "Ambiente", "Development")
-    Write-Host (" {0,-14}: {1}" -f "Branch", "feature/graph-auth")
+    Write-Host (" {0,-14}: {1}" -f "Branch", "feature/graph-context")
     Write-Host ""
     Write-Host "============================================================" -ForegroundColor Cyan
     Write-Host ""
