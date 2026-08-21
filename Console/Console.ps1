@@ -16,7 +16,9 @@ function Start-Console {
             }
 
             2 {
-                Write-Info "Exchange Online em desenvolvimento."
+                Connect-M365Exchange
+                Clear-Console
+                Get-M365ExchangeContext
             }
 
             3 {
