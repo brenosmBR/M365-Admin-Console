@@ -1,6 +1,7 @@
 # Importa o módulo Core
 Import-Module "$PSScriptRoot\Modules\Core.psm1" -Force
 Import-Module "$PSScriptRoot\Modules\Graph.psm1" -Force
+Import-Module "$PSScriptRoot\Modules\Exchange.psm1" -Force
 
 # Carrega os arquivos da interface
 . "$PSScriptRoot\UI\Banner.ps1"
