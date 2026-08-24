@@ -28,7 +28,9 @@ function Start-Console {
             }
 
             4 {
-                Write-Info "SharePoint Online em desenvolvimento."
+                Connect-M365SharePoint
+                Clear-Console
+                Get-M365SharePointContext
             }
 
             5 {
