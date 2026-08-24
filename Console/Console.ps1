@@ -22,7 +22,9 @@ function Start-Console {
             }
 
             3 {
-                Write-Info "Microsoft Teams em desenvolvimento."
+                Connect-M365Teams
+                Clear-Console
+                Get-M365TeamsContext
             }
 
             4 {
