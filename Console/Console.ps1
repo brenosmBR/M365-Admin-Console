@@ -34,7 +34,9 @@ function Start-Console {
             }
 
             5 {
-                Write-Info "Microsoft Entra ID em desenvolvimento."
+                Connect-M365EntraID
+                Clear-Console
+                Get-M365EntraIDContext
             }
 
             9 {
