@@ -39,9 +39,18 @@ M365-Admin-Console
 - MicrosoftTeams
 - PnP.PowerShell
 
-## Instalação
+## Download e Uso
 
-Em breve será disponibilizado um script de instalação automática.
+O console é portátil e não exige instalação complexa. Para começar a utilizar:
+
+1. **Baixe a versão mais recente:**
+🔗 [Baixar Última Versão (ZIP)](https://github.com/brenosmBR/M365-Admin-Console/releases/latest)
+
+2. Extraia o conteúdo do arquivo `.zip` em um diretório da sua preferência (ex: `C:\Scripts\M365-Admin-Console`).
+3. Abra o seu terminal do PowerShell e execute o script principal:
+
+powershell
+.\M365-Admin-Console.ps1
 
 ## Autor
 
