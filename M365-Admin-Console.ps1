@@ -10,6 +10,7 @@ Import-Module "$PSScriptRoot\Modules\Entra.psm1" -Force
 . "$PSScriptRoot\UI\Banner.ps1"
 . "$PSScriptRoot\UI\Menu.ps1"
 . "$PSScriptRoot\Console\Console.ps1"
+. "$PSScriptRoot\Console\GraphMenu.ps1"
 
 # 1. Exibe o banner inicial com a branch dinâmica
 Show-Banner
