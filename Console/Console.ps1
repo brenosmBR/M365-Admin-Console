@@ -1,60 +1,53 @@
 function Start-Console {
+    $ExitConsole = $false
 
-    $Running = $true
-
-    while ($Running) {
+    while (-not $ExitConsole) {
+        Clear-Console
         Show-Banner
         Show-Menu
 
         $Option = Read-MenuOption
 
         switch ($Option) {
-            1 {
-                Connect-M365Graph
-                Clear-Console
-                Get-M365GraphContext
+            "1" {
+                Show-GraphMenu
             }
-
-            2 {
-                Connect-M365Exchange
+            "2" {
                 Clear-Console
+                Show-Banner
                 Get-M365ExchangeContext
+                Wait-Console
             }
-
-            3 {
-                Connect-M365Teams
+            "3" {
                 Clear-Console
+                Show-Banner
                 Get-M365TeamsContext
+                Wait-Console
             }
-
-            4 {
-                Connect-M365SharePoint
+            "4" {
                 Clear-Console
+                Show-Banner
                 Get-M365SharePointContext
+                Wait-Console
             }
-
-            5 {
-                Connect-M365EntraID
+            "5" {
                 Clear-Console
-                Get-M365EntraIDContext
+                Show-Banner
+                Get-M365EntraContext
+                Wait-Console
             }
-
-            9 {
-                Write-Info "Configurações em desenvolvimento."
+            "9" {
+                Write-Info "Módulo de Configurações em desenvolvimento."
+                Wait-Console
             }
-
-            0 {
-                Write-Info "Saindo do console..."
-                $Running = $false
+            "0" {
+                Write-Info "Saindo do M365 Admin Console..."
+                $ExitConsole = $true
             }
-
-            Default {
-                Write-WarningMessage "Opção inválida. Por favor, escolha uma opção válida."
+            default {
+                Write-WarningMessage "Opção inválida. Tente novamente."
+                Wait-Console
             }
-        }
-
-        if ($Running) {
-            Wait-Console
         }
     }
 }
