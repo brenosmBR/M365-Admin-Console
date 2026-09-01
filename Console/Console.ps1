@@ -13,10 +13,7 @@ function Start-Console {
                 Show-GraphMenu
             }
             "2" {
-                Clear-Console
-                Show-Banner
-                Get-M365ExchangeContext
-                Wait-Console
+                Show-ExchangeMenu
             }
             "3" {
                 Clear-Console
