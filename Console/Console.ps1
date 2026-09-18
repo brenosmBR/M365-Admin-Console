@@ -16,10 +16,7 @@ function Start-Console {
                 Show-ExchangeMenu
             }
             "3" {
-                Clear-Console
-                Show-Banner
-                Get-M365TeamsContext
-                Wait-Console
+                Show-TeamsMenu
             }
             "4" {
                 Clear-Console
