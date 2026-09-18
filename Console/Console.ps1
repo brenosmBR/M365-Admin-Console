@@ -28,10 +28,7 @@ function Start-Console {
                 Wait-Console
             }
             "5" {
-                Clear-Console
-                Show-Banner
-                Get-M365EntraContext
-                Wait-Console
+                Show-EntraMenu
             }
             "9" {
                 Write-Info "Módulo de Configurações em desenvolvimento."
