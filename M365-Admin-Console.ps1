@@ -13,6 +13,7 @@ Import-Module "$PSScriptRoot\Modules\Entra.psm1" -Force
 . "$PSScriptRoot\Console\GraphMenu.ps1"
 . "$PSScriptRoot\Console\ExchangeMenu.ps1"
 . "$PSScriptRoot\Console\EntraMenu.ps1"
+. "$PSScriptRoot\Console\TeamsMenu.ps1"
 
 # 1. Exibe o banner inicial com a branch dinâmica
 Show-Banner
