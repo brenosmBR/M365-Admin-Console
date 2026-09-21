@@ -19,10 +19,7 @@ function Start-Console {
                 Show-TeamsMenu
             }
             "4" {
-                Clear-Console
-                Show-Banner
-                Get-M365SharePointContext
-                Wait-Console
+                Show-SharePointMenu
             }
             "5" {
                 Show-EntraMenu
