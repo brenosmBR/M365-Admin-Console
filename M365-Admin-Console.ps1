@@ -1,20 +1,27 @@
 # Importa o módulo Core e os submódulos do M365
-Import-Module "$PSScriptRoot\Modules\Core.psm1" -Force
-Import-Module "$PSScriptRoot\Modules\Graph.psm1" -Force
-Import-Module "$PSScriptRoot\Modules\Exchange.psm1" -Force
-Import-Module "$PSScriptRoot\Modules\Teams.psm1" -Force
-Import-Module "$PSScriptRoot\Modules\SharePoint.psm1" -Force
-Import-Module "$PSScriptRoot\Modules\Entra.psm1" -Force
+. "$PSScriptRoot\Modules\Core\Core.psm1"
+
+. "$PSScriptRoot\Modules\Entra\Entra.psm1"
+. "$PSScriptRoot\Modules\Entra\EntraMenu.ps1"
+
+. "$PSScriptRoot\Modules\Exchange\Exchange.psm1"
+. "$PSScriptRoot\Modules\Exchange\ExchangeMenu.ps1"
+
+. "$PSScriptRoot\Modules\Graph\Graph.psm1"
+. "$PSScriptRoot\Modules\Graph\GraphMenu.ps1"
+
+. "$PSScriptRoot\Modules\Sharepoint\SharePoint.psm1"
+. "$PSScriptRoot\Modules\Sharepoint\SharePointMenu.ps1"
+
+. "$PSScriptRoot\Modules\Teams\Teams.psm1"
+. "$PSScriptRoot\Modules\Teams\TeamsMenu.ps1"
+
+. "$PSScriptRoot\Modules\Settings\SettingsMenu.ps1"
 
 # Carrega os arquivos da interface
 . "$PSScriptRoot\UI\Banner.ps1"
 . "$PSScriptRoot\UI\Menu.ps1"
 . "$PSScriptRoot\Console\Console.ps1"
-. "$PSScriptRoot\Console\GraphMenu.ps1"
-. "$PSScriptRoot\Console\ExchangeMenu.ps1"
-. "$PSScriptRoot\Console\EntraMenu.ps1"
-. "$PSScriptRoot\Console\TeamsMenu.ps1"
-. "$PSScriptRoot\Console\SharePointMenu.ps1"
 
 # 1. Exibe o banner inicial com a branch dinâmica
 Show-Banner
